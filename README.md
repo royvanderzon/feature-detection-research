@@ -6,13 +6,15 @@ With the img tag `srcset=""` it is possible to render a specific image.
 ### Fallback
 In the `picture` element has to be an `img` at the bottom. Like this:
 
-`<picture>
+```<picture>
     <source srcset="1.jpg" media="(max-width: 200px)">
     <source srcset="2.jpg" media="(max-width: 500px)">
     <img src="3.jpg" alt="Responsive image"> <!-- FALLBACK -->
-</picture>`
+</picture>
+```
 
-The first mathing image will be rendered. When none images are correct, the `img` will be rendered.
+The first mathing image will be rendered. When none images are correct, 
+the `img` will be rendered.
 
 ## HTML - Datalist
 
