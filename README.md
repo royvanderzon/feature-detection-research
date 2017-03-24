@@ -3,7 +3,7 @@
 
 With the img tag `srcset=""` it is possible to render a specific image.
 
-###Fallback
+### Fallback
 In the `picture` element has to be an `img` at the bottom. Like this:
 `
 <picture>
@@ -18,5 +18,5 @@ The first mathing image will be rendered. When none images are correct, the `img
 
 With the datalist tag it is possible to autocomplete an input field with the usabillity of an selectbox.
 
-###Fallback
+### Fallback
 You can use vanilla JS solutions to give the user an autocomplete experiance. Example: https://goodies.pixabay.com/javascript/auto-complete/demo.html
