@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Responsive pictures</h1>
+    <hr>
+    <picture>
+        <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=353×150&w=200&h=150" media="(max-width: 200px)">
+        <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=353×150&w=400&h=150" media="(max-width: 400px)">
+        <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=353×150&w=800&h=150" media="(max-width: 800px)">
+        <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=353×150&w=900&h=150" media="(min-width: 900px)">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=353×150&w=900&h=900" alt="Responsive image"> <!-- FALLBACK -->
+    </picture>
+    <hr>
+
+    <a href="http://caniuse.com/#search=srcset" target="_blank">CANIUSE?</a>
+
+</body>
+
+</html>
