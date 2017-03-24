@@ -3,6 +3,10 @@
 
 With the img tag `srcset=""` it is possible to render a specific image.
 
+### Can I use?
+http://caniuse.com/#search=srcset
+**Global 86.03%**
+
 ### Fallback
 In the `picture` element has to be an `img` at the bottom. Like this:
 
@@ -20,6 +24,10 @@ the `img` will be rendered.
 ## HTML - Datalist
 
 With the datalist tag it is possible to autocomplete an input field with the usabillity of an selectbox.
+
+### Can I use?
+http://caniuse.com/#search=Datalist
+**Global 79.67%**
 
 ### Fallback
 You can use vanilla JS solutions to give the user an autocomplete experiance. Example: https://goodies.pixabay.com/javascript/auto-complete/demo.html 
@@ -42,6 +50,10 @@ Example:
 
 With CSS variables you can define colors once.
 
+### Can I use?
+http://caniuse.com/#search=Variables
+**Global 69.62%**
+
 ### Fallback
 If u use CSS variables define the color before the actual use of it. When the variable is not supported, the fallback will be the color before the used property.
 Example:
@@ -58,7 +70,7 @@ With the native Navigator function you can get the current coordinates of the us
 
 ### Can I use?
 http://caniuse.com/#search=navigator
-** Global 50.08% **
+**Global 50.08%**
 
 
 ### Fallback
