@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #map {
+        height: 100%;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>JS Map</h1>
+    <hr>
+    <div id="map">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=52.2282751,4.4910059&zoom=13&scale=2&size=2000x1000&maptype=terrain&style=element:labels|visibility:off&key=AIzaSyAeEIR7Ym9fl4wUr2kFGxAKsV9YvEa8v9w" alt="">
+    </div>
+    <hr>
+    <a href="http://caniuse.com/#search=navigator" target="_blank">CANIUSE?</a>
+    <script>
+    var map;
+    var mapEl = document.getElementById('map');
+
+    function renderMap(el){
+        map = new google.maps.Map(el, {
+            center: {
+                lat: -34.397,
+                lng: 150.644
+            },
+            zoom: 8
+        });
+    }
+
+    function initMap() {
+        mapEl.innerHTML = ''
+        renderMap(mapEl)
+    }
+
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC61KbyEqEeyqNbtaYSzGYHga_dVSAw9UY&callback=initMap" async defer></script>
+</body>
+
+</html>

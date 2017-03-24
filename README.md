@@ -87,3 +87,26 @@ var supports_navigator = function(){
 }
 supports_navigator() //returns true in Chrome +55
 ```
+
+## JS - Api
+
+With an library you can add extra content to your website. It is important that when Javascript is disabled or doesn't work the browser can still give content.
+
+The maps library uses many different native functions like `navigator`, touchevents and more. You never know what's in an library.
+
+### Fallback
+By overwriting a DOM element with content there is always something.
+Example:
+
+```
+<div id="map">
+    <img src="img.png" alt="">
+</div>
+
+<script>
+    function initMap() {
+        mapEl.innerHTML = ''
+        renderMap(mapEl)
+    }
+</script>
+```
