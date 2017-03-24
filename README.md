@@ -22,4 +22,4 @@ the `img` will be rendered.
 With the datalist tag it is possible to autocomplete an input field with the usabillity of an selectbox.
 
 ### Fallback
-You can use vanilla JS solutions to give the user an autocomplete experiance. Example: https://goodies.pixabay.com/javascript/auto-complete/demo.html
+You can use vanilla JS solutions to give the user an autocomplete experiance. Example: https://goodies.pixabay.com/javascript/auto-complete/demo.html 
