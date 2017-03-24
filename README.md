@@ -34,7 +34,11 @@ You can use vanilla JS solutions to give the user an autocomplete experiance. Ex
 
 ## CSS - GRID
 
-CCS Grid is a new CSS feature for GRID LAYOUT.
+CCS Grid is a new CSS feature for GRID layout.
+
+### Can I use?
+http://caniuse.com/#search=grid
+**Global 6.28%**
 
 ### Fallback
 Before the GRID property define another grid property like flexbox. In this way if GRID is not supported, the fallback is on flexbox.
