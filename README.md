@@ -37,3 +37,17 @@ Example:
     display: grid;
 }
 ```
+
+## CSS - Variables
+
+With CSS variables you can define colors once.
+
+### Fallback
+If u use CSS variables define the color before the actual use of it. When the variable is not supported, the fallback will be the color before the used property.
+Example:
+```
+.red {
+    color: red;
+    color: var(--theme-red);
+}
+```
