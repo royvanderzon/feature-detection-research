@@ -1,5 +1,5 @@
 # Feature Detection & Accessibility
-## HTML - Responsive images
+## HTML - Source
 
 With the img tag `srcset=""` it is possible to render a specific image.
 
@@ -23,3 +23,17 @@ With the datalist tag it is possible to autocomplete an input field with the usa
 
 ### Fallback
 You can use vanilla JS solutions to give the user an autocomplete experiance. Example: https://goodies.pixabay.com/javascript/auto-complete/demo.html 
+
+## CSS - GRID
+
+CCS Grid is a new CSS feature for GRID LAYOUT.
+
+### Fallback
+Before the GRID property define another grid property like flexbox. In this way if GRID is not supported, the fallback is on flexbox.
+Example:
+```
+.wrapper{
+    display: flex;
+    display: grid;
+}
+```

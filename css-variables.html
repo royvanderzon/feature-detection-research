@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    :root {
+        --theme-red: red;
+        --theme-blue: blue;
+        --theme-green: green;
+        --theme-grey: grey;
+    }
+
+    .red {
+        color: red;
+        color: var(--theme-red);
+    }
+    
+    .blue {
+        color: blue;
+        color: var(--theme-blue);
+    }
+    
+    .green {
+        color: green;
+        color: var(--theme-green);
+    }
+    
+    .grey {
+        color: grey;
+        color: var(--theme-grey);
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Variables</h1>
+    <hr>
+    <h2 class="red">Red</h2>
+    <h2 class="blue">Blue</h2>
+    <h2 class="green">Green</h2>
+    <h2 class="grey">Grey</h2>
+    <hr>
+    <a href="http://caniuse.com/#search=Variables" target="_blank">CANIUSE?</a>
+</body>
+
+</html>
