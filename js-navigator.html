@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .none{
+            display: none;
+        }
+        form + p{
+            display: none;
+        }
+        form.none + p{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Navigator</h1>
+    <hr>
+    <form action="/" method="post" class="none ask_location">
+        <input type="text" id="location" name="location" placeholder="type your location">
+    </form>
+    <p>Your location is <span class="cords"></span></p>
+    <hr>
+    <a href="http://caniuse.com/#search=navigator" target="_blank">CANIUSE?</a>
+    <script>
+
+    var supports_navigator = function(){
+        return navigator.geolocation;
+    }
+
+    // if(true){
+    if(!supports_navigator){
+        // no support
+        document.querySelector('.ask_location').classList.remove('none')
+    }else{
+        // Go on
+        /* codeblock */
+        console.log('WORKS!')
+        navigator.geolocation.getCurrentPosition(function(position){
+            document.querySelector('.cords').innerHTML = 'Lat: ' + position.coords.latitude + ' Lng: ' + position.coords.longitude
+        })
+    }
+
+    </script>
+</body>
+
+</html>

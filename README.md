@@ -51,3 +51,23 @@ Example:
     color: var(--theme-red);
 }
 ```
+
+## JS - Navigator
+
+With the native Navigator function you can get the current coordinates of the users device.
+
+### Can I use?
+http://caniuse.com/#search=navigator
+** Global 50.08% **
+
+
+### Fallback
+By checkking of the `navigator.geolocation` object exists you can verify if the function works. If the functions doesn't work, you can ask the user for his/her location!
+
+Example:
+```
+var supports_navigator = function(){
+    return navigator.geolocation;
+}
+supports_navigator() //returns true in Chrome +55
+```
