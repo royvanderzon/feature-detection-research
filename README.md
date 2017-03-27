@@ -33,7 +33,7 @@ the `img` will be rendered.
 With the datalist tag it is possible to autocomplete an input field with the usabillity of an selectbox. There are many frameworks like Angular or React. They provide live searches. In some cases this is important, but in some cases there is no need for an API call after every keypress. With the HTML datalist you can still get an nice live search! Made with pure html.
 
 ### Demo
-https://royvanderzon.github.io/feature-detection-research/css-variables.html
+https://royvanderzon.github.io/feature-detection-research/html-datalist.html
 
 ### Can I use?
 http://caniuse.com/#search=Datalist
@@ -49,7 +49,7 @@ You can use vanilla JS solutions to give the user an autocomplete experiance. Ex
 CCS Grid is a new CSS feature for GRID layout. With this grid you can position your components on a whole new way. The support is pretty bad, but it will we implemented in production soon. It is nice to build your website with grid css and when the browser of the user updates with the grid css it will work directly. It is important to build the website with css grid first and then rebuild it without. The fallback explains how.
 
 ### Demo
-https://royvanderzon.github.io/feature-detection-research/css-variables.html
+https://royvanderzon.github.io/feature-detection-research/css-grid.html
 
 ### Can I use?
 http://caniuse.com/#search=grid
@@ -92,15 +92,16 @@ Example:
 
 ## JS - Navigator
 
-With the native Navigator function you can get the current coordinates of the users device. 
+With the native `Navigator` function you can get the current coordinates of the users device. This `navigator.geolocation` function is often used to get the coordinates of the user. The coordinates are based on the GPS or the network where the user is browsing. This function is supported everywhere exept in `opera mini`. This is why you need a fallback. Why not __ask__ the user his location? It is nice to have this automated but the only thing it does is get the current location.
 
 ### Demo
-https://royvanderzon.github.io/feature-detection-research/css-variables.html
+https://royvanderzon.github.io/feature-detection-research/js-navigator.html
 
 ### Can I use?
-http://caniuse.com/#search=navigator
-**Global 50.08%**
+http://caniuse.com/#search=geolocation
+**Global 94.49%**
 
+You should use this defenitely, but keep in mind that travelers (that use opera mini) cannot get their current location. So always have this fallback.
 
 ### Fallback
 By checkking of the `navigator.geolocation` object exists you can verify if the function works. If the functions doesn't work, you can ask the user for his/her location!
@@ -120,7 +121,7 @@ With an library you can add extra content to your website. It is important that 
 The maps library uses many different native functions like `navigator`, touchevents and more. You never know what's in an library.
 
 ### Demo
-https://royvanderzon.github.io/feature-detection-research/css-variables.html
+https://royvanderzon.github.io/feature-detection-research/js-map.html
 
 ### Fallback
 By overwriting a DOM element with content there is always something.
@@ -138,6 +139,3 @@ Example:
     }
 </script>
 ```
-
-### Demo
-https://royvanderzon.github.io/feature-detection-research/css-variables.html
