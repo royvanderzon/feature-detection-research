@@ -116,7 +116,7 @@ supports_navigator() //returns true in Chrome +55
 
 ## JS - Api
 
-With an library you can add extra content to your website. It is important that when Javascript is disabled or doesn't work the browser can still give content.
+With an library you can add extra content to your website. It is important that when Javascript is disabled or doesn't work the browser can still contains content. If there is content in the HTML tag it will be overwritten by JS. So in many cases there are empty div's on a page. This is perfect for if JS doesn't work! So place usefull content in div's. Or you could always say: `<p>Please try again, something went wrong..</p>`.
 
 The maps library uses many different native functions like `navigator`, touchevents and more. You never know what's in an library.
 
