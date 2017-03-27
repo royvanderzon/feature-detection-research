@@ -3,6 +3,9 @@
 
 With the img tag `srcset=""` it is possible to render a specific image.
 
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
+
 ### Can I use?
 http://caniuse.com/#search=srcset
 **Global 86.03%**
@@ -25,6 +28,9 @@ the `img` will be rendered.
 
 With the datalist tag it is possible to autocomplete an input field with the usabillity of an selectbox.
 
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
+
 ### Can I use?
 http://caniuse.com/#search=Datalist
 **Global 79.67%**
@@ -35,6 +41,9 @@ You can use vanilla JS solutions to give the user an autocomplete experiance. Ex
 ## CSS - GRID
 
 CCS Grid is a new CSS feature for GRID layout.
+
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
 
 ### Can I use?
 http://caniuse.com/#search=grid
@@ -54,6 +63,9 @@ Example:
 
 With CSS variables you can define colors once.
 
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
+
 ### Can I use?
 http://caniuse.com/#search=Variables
 **Global 69.62%**
@@ -71,6 +83,9 @@ Example:
 ## JS - Navigator
 
 With the native Navigator function you can get the current coordinates of the users device.
+
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
 
 ### Can I use?
 http://caniuse.com/#search=navigator
@@ -94,6 +109,9 @@ With an library you can add extra content to your website. It is important that 
 
 The maps library uses many different native functions like `navigator`, touchevents and more. You never know what's in an library.
 
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
+
 ### Fallback
 By overwriting a DOM element with content there is always something.
 Example:
@@ -110,3 +128,6 @@ Example:
     }
 </script>
 ```
+
+### Demo
+https://royvanderzon.github.io/feature-detection-research/css-variables.html
